@@ -193,4 +193,8 @@ function submitAnswers() {
 $("#btnStart").on("click", function () {
     start();
 })
- 
+ $("#btnRestart").on("click", function(){
+$("#results").empty();
+time = 60;
+    start();
+ });
